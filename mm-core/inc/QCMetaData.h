@@ -36,17 +36,6 @@ namespace android {
 enum {
     kKeyAacCodecSpecificData = 'nacc' , // for native aac files
 
-    kKeyRawCodecSpecificData = 'rcsd',  // raw data - added to support mmParser
-    kKeyDivXVersion          = 'DivX',  // int32_t
-    kKeyDivXDrm              = 'QDrm',  // void *
-    kKeyWMAEncodeOpt         = 'eopt',  // int32_t
-    kKeyWMABlockAlign        = 'blka',  // int32_t
-    kKeyWMAVersion           = 'wmav',  // int32_t
-    kKeyWMAAdvEncOpt1        = 'ade1',  // int16_t
-    kKeyWMAAdvEncOpt2        = 'ade2',  // int32_t
-    kKeyWMAFormatTag         = 'fmtt',  // int64_t
-    kKeyWMABitspersample     = 'bsps',  // int64_t
-    kKeyWMAVirPktSize        = 'vpks',  // int64_t
     kKeyWMAChannelMask       = 'chmk',  // int32_t
 
     kKeyFileFormat           = 'ffmt',  // cstring
@@ -63,18 +52,6 @@ enum {
     kKeyUseArbitraryMode     = 'ArbM',  //bool (int32_t)
     kKeySmoothStreaming      = 'ESmS',  //bool (int32_t)
     kKeyHFR                  = 'hfr ',  // int32_t
-};
-
-enum {
-    kTypeDivXVer_3_11,
-    kTypeDivXVer_4,
-    kTypeDivXVer_5,
-    kTypeDivXVer_6,
-};
-enum {
-    kTypeWMA,
-    kTypeWMAPro,
-    kTypeWMALossLess,
 };
 
 }  // namespace android
